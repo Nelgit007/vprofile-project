@@ -6,7 +6,7 @@ FROM openjdk:11 AS BUILD_IMAGE
 RUN apt update && apt install maven -y
 #clone source code
 RUN git clone https://github.com/Nelgit007/vprofile-project.git
-RUN cd vprofile-project && git checkout docker && mvn install -y
+RUN cd vprofile-project && git checkout docker && mvn install
 
 #Stage 2 - Build and package app image
 #App written in Java require web server functionality support,

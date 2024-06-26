@@ -37,8 +37,8 @@ services:
   
   vproweb:
     build:
-      context: ./Docker-files/we
-    images: nelsonosagie/nelweb
+      context: ./Docker-files/web
+    image: nelsonosagie/nelweb
     container_name: vproweb
     ports:
       - "80:80"
